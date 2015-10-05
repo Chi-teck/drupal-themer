@@ -33,7 +33,7 @@
     "bower_components/jquery-ui/images/*",
     "bower_components/jquery-ui/themes/redmond/images/*"
   ],
-  "description": "---------",
+  "description": "A simple debug tool for Drupal themers",
    "icons": {
       "16": "images/16-enabled.png",
       "32": "images/32-enabled.png",
