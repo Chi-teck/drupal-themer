@@ -8,19 +8,19 @@
         "scripts": [ "background.js" ]
     },
    "page_action": {
-      "default_icon": "/images/64-disabled.png",
+      "default_icon": "/images/16-disabled.png",
       "default_title": "Enable theme debbugging"
    },
    "content_scripts": [
       {
         "js": [
-          "jquery.min.js",
-          "jquery-ui/jquery-ui.min.js",
+          "bower_components/jquery/dist/jquery.min.js",
+          "bower_components/jquery-ui/jquery-ui.min.js",
           "content.js"
         ],
         "css": [
-          "jquery-ui/jquery-ui.min.css",
-          "jquery-ui/jquery-ui.theme.min.css",
+          "bower_components/jquery-ui/themes/redmond/jquery-ui.min.css",
+          "bower_components/jquery-ui/themes/redmond/theme.css",
           "content.css"
         ],
         "matches": [ "http://*/*", "https://*/*" ],
@@ -29,10 +29,15 @@
       }
    ],
   "web_accessible_resources": [
-    "jquery-ui/images/*"
+    "bower_components/jquery/dist/jquery.min.map",
+    "bower_components/jquery-ui/images/*",
+    "bower_components/jquery-ui/themes/redmond/images/*"
   ],
   "description": "---------",
    "icons": {
-      "64": "images/64-enabled.png"
+      "16": "images/16-enabled.png",
+      "32": "images/32-enabled.png",
+      "64": "images/64-enabled.png",
+      "128": "images/128-enabled.png"
    }
 }

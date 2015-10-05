@@ -14,11 +14,10 @@ module.exports = function (grunt) {
                             'content.js',
                             'content.css',
                             'images/*.png',
-                            'jquery-ui/jquery-ui.min.js',
-                            'jquery.min.js',
-                            'jquery-ui/jquery-ui.min.css',
-                            'jquery-ui/jquery-ui.theme.min.css',
-                            'jquery-ui/images/*'
+                            'bower_components/jquery/dist/jquery.min.js',
+                            'bower_components/jquery-ui/jquery-ui.min.js',
+                            'bower_components/jquery-ui/themes/redmond/*',
+                            'bower_components/jquery-ui/themes/redmond/images/*'
                         ],
                         dest: 'dist/'
                     }
@@ -27,12 +26,15 @@ module.exports = function (grunt) {
         },
         replace: {
             "jquery-ui": {
-                src: ['dist/jquery-ui/jquery-ui.min.css', 'dist/jquery-ui/jquery-ui.theme.min.css'],
-                dest: 'dist/jquery-ui/',
+                src: [
+                    'dist/bower_components/jquery-ui/themes/redmond/jquery-ui.min.css',
+                    'dist/bower_components/jquery-ui/themes/redmond/theme.css'
+                ],
+                dest: 'dist/bower_components/jquery-ui/themes/redmond/',
                 replacements: [
                     {
                         from: '("images/ui-',
-                        to: '("chrome-extension://__MSG_@@extension_id__/jquery-ui/images/ui-'
+                        to: '("chrome-extension://__MSG_@@extension_id__/bower_components/jquery-ui/themes/redmond/images/ui-'
                     }
                 ]
             }
