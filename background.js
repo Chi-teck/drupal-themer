@@ -16,7 +16,12 @@ chrome.pageAction.onClicked.addListener(function(tab) {
             tabId: tab.id,
             path: statuses[tab.id] ? 'images/32-enabled.png' : 'images/32-disabled.png'
         });
+        chrome.pageAction.setTitle({
+            tabId: tab.id,
+            title: statuses[tab.id] ? 'Disable theme debugging' : 'Enable theme debugging'
 
+        });
     }
 
 });
+

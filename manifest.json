@@ -9,7 +9,7 @@
     },
    "page_action": {
       "default_icon": "/images/16-disabled.png",
-      "default_title": "Enable theme debbugging"
+      "default_title": "Enable theme debugging"
    },
    "content_scripts": [
       {
