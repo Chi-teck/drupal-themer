@@ -1,0 +1,42 @@
+.dt-enabled .dt-template {
+    /*display: inline-block;*/
+    cursor: help;
+}
+
+.dt-enabled .dt-template.dt-hover {
+    box-shadow: 0 0 15px #1E8ACC;
+}
+
+.dt-template:hover {
+    /*outline: solid 1px red;*/
+
+}
+
+.ui-widget-content.ui-tooltip {
+    background: #1E8ACC;
+    border: 2px solid white;
+
+    overflow: hidden;
+    /*min-width: 350px;*/
+    max-width: none;
+    padding: 10px 25px;
+    color: white;
+    border-radius: 10px;
+    font: normal 14px "Helvetica Neue", Sans-Serif;
+    box-shadow: 0 0 7px #1E8ACC;
+}
+
+.ui-widget-content.ui-tooltip dt {
+    font-weight: bold;
+    margin: 7px 0 3px 0;
+    text-transform: uppercase;
+}
+.ui-widget-content.ui-tooltip dd {
+    padding: 0;
+    margin-left: 25px;
+}
+
+.ui-widget-overlay {
+    background: #555;
+    opacity: .7;
+}
