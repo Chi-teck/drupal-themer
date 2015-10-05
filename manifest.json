@@ -19,7 +19,8 @@
           "content.js"
         ],
         "css": [
-          "jquery-ui/jquery-ui.css",
+          "jquery-ui/jquery-ui.min.css",
+          "jquery-ui/jquery-ui.theme.min.css",
           "content.css"
         ],
         "matches": [ "http://*/*", "https://*/*" ],
