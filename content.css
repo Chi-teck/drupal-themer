@@ -1,23 +1,16 @@
 .dt-enabled .dt-template {
-    /*display: inline-block;*/
     cursor: help;
 }
 
 .dt-enabled .dt-template.dt-hover {
     box-shadow: 0 0 15px #1E8ACC;
 }
-
-.dt-template:hover {
-    /*outline: solid 1px red;*/
-
+.ui-dialog {
+    z-index: 1000;
 }
-
 .ui-widget-content.ui-tooltip {
     background: #1E8ACC;
     border: 2px solid white;
-
-    overflow: hidden;
-    /*min-width: 350px;*/
     max-width: none;
     padding: 10px 25px;
     color: white;
@@ -31,6 +24,7 @@
     margin: 7px 0 3px 0;
     text-transform: uppercase;
 }
+
 .ui-widget-content.ui-tooltip dd {
     padding: 0;
     margin-left: 25px;

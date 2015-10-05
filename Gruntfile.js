@@ -39,12 +39,23 @@ module.exports = function (grunt) {
                 ]
             }
 
+        },
+        watch: {
+            scripts: {
+                files: [
+                    'background.js',
+                    'content.js',
+                    'content.css'
+                ],
+                tasks: ['default']
+            }
         }
     });
 
     grunt.loadNpmTasks('grunt-contrib-clean');
     grunt.loadNpmTasks('grunt-contrib-copy');
     grunt.loadNpmTasks('grunt-text-replace');
+    grunt.loadNpmTasks('grunt-contrib-watch');
 
     var defaultTasks = [
         'clean',
