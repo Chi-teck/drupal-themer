@@ -1,5 +1,7 @@
 # Drupal themer
 A simple debug tool for Drupal themers inspired by [Theme developer](https://www.drupal.org/project/devel_themer) module.
+
+## Installation
 https://chrome.google.com/webstore/detail/drupal-themer/gjlghpombfhkhigbcphenialnhbeolhd
 
 ## Usage
