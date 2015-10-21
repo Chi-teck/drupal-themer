@@ -24,7 +24,7 @@ $(function () {
 
         $comments.each(function (index) {
 
-            // In Drupal 7 them hook is marked differently.
+            // In Drupal 7 theme hook is marked differently.
             if (this.nodeValue.indexOf('CALL: theme') !== -1) {
                 data.theme = this.nodeValue.split("'")[1];
             }
